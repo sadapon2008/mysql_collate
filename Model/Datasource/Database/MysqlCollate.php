@@ -8,7 +8,7 @@ class MysqlCollate extends Mysql {
         $result = parent::_parseKey($key, $value, $Model);
 
         if(($Model !== null) && ($Model->Behaviors->loaded('MysqlCollate'))) {
-            if(preg_match('/^' . $Model->alias . '\.([^\s]+)/', $key, $matches)) {
+            if(preg_match('/^([^\s]+)/', $key, $matches)) {
                 $field = $matches[1];
                 $collate = $Model->getMysqlCollate($field);
                 if(!empty($collate)) {

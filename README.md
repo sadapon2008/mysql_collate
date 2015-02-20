@@ -36,7 +36,7 @@ $options = array(
 $this->Post->Behaviors->load(
     'MysqlCollate.MysqlCollate',
     array(
-      'title' => 'utf8_unicode_ci',
+      'Post.title' => 'utf8_unicode_ci',
     )
 );
 
