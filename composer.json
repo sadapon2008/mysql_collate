@@ -1,6 +1,7 @@
 {
     "name": "sadapon2008/mysql_collate",
     "description": "Mysql Datasource For CakePHP supporting COLLATE in conditions",
+    "license": "MIT",
     "type": "cakephp-plugin",
     "keywords": ["cakephp"],
     "homepage": "https://github.com/sadapon2008/mysql_collate",
